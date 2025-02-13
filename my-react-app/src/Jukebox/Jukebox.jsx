@@ -40,6 +40,7 @@ const Jukebox = ({
         <div>
           <p>Now Playing: {songs[currentSongIndex].title}</p>
         </div>
+
       </div>
     </div>
   );
