@@ -7,19 +7,19 @@ import Jukebox from "./Jukebox/Jukebox.jsx";
 function App() {
   const songs = [
     {
-      title: "Song 1",
+      title: "Mystery",
       url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     },
     {
-      title: "Song 2",
+      title: "Techo Ocean",
       url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
     },
     {
-      title: "Song 3",
+      title: "Metal Rain",
       url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
     },
     {
-      title: "Song 4",
+      title: "N-R-G",
       url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
     },
   ];
@@ -63,7 +63,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="app-container">
       <Jukebox
         songs={songs}
         currentSongIndex={currentSongIndex}
@@ -72,9 +72,8 @@ function App() {
         onNext={handleNext}
         onPrev={handlePrev}
       />
-      <PlayPauseButton />
       <Songbook songs={songs} onSongSelect={handleSongSelect} />
-    </>
+    </div>
   );
 }
 

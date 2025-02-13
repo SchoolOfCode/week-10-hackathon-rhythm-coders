@@ -12,7 +12,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #be5b4eaa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -39,4 +39,33 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center; /* Center the components horizontally */
+  align-items: flex-start;
+  gap: 40px; /* Add space between the components */
+  padding: 50px;
+}
+
+.jukebox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(to bottom, #c2ffc5, #39532d);
+  border-radius: 50px; /* Make all corners rounded */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.jukebox {
+  flex: 1;
+  text-align: center;
+}
+
+.songbook {
+  flex: 1;
 }
