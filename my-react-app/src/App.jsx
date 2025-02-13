@@ -3,6 +3,7 @@ import Songbook from "./SongBook/Songbook";
 import "./App.css";
 import PlayPauseButton from "./Play/Pause/PlayPause";
 import Jukebox from "./Jukebox/Jukebox.jsx";
+import Test from "./TESTFOLDER-grace/TESTFOLDER.jsx";
 
 function App() {
   const songs = [
@@ -73,6 +74,7 @@ function App() {
         onPrev={handlePrev}
       />
       <Songbook songs={songs} onSongSelect={handleSongSelect} />
+      <Test />
     </div>
   );
 }
