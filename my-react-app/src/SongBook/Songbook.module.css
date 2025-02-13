@@ -1,0 +1,101 @@
+@keyframes neonPulse {
+    0% {
+      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+    }
+    100% {
+      text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 18px #fff, 0 0 38px #0fa,
+        0 0 73px #0fa, 0 0 80px #0fa, 0 0 94px #0fa, 0 0 140px #0fa;
+    }
+  }
+  
+  .songbook {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+    border: 2px solid #0fa;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #0fa;
+  }
+  
+  .header h2 {
+    color: #fff;
+    font-size: 2em;
+    margin: 0;
+    animation: neonPulse 1.5s infinite alternate;
+  }
+  
+  .songList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .songList::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .songList::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 4px;
+  }
+  
+  .songList::-webkit-scrollbar-thumb {
+    background: #0fa;
+    border-radius: 4px;
+  }
+  
+  .songItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .songItem:hover {
+    background: #333;
+    transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.2);
+  }
+  
+  .songId {
+    background: #0fa;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 40px;
+    text-align: center;
+    margin-right: 15px;
+  }
+  
+  .songInfo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .songTitle {
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+  }
+  
+  .songArtist {
+    color: #0fa;
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
