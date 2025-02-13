@@ -10,7 +10,7 @@ const Jukebox = ({
 }) => {
   return (
     <div>
-      <h1>Jukebox</h1>
+      <h1>JJ's Jukebox</h1>
       <h2>{songs[currentSongIndex].title}</h2>
       <div>
         <button onClick={onPrev}>Previous</button>
