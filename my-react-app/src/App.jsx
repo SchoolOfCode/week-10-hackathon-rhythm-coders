@@ -1,18 +1,25 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
+
+
+import Songbook from './SongBook/Songbook'
 import './App.css'
+import PlayPauseButton from './Play/Pause/PlayPause'
 import Jukebox from './Jukebox/Jukebox.jsx';
 
-const App = () => {
-  
+function App() {
+ 
+
   return (
-    <div>
+    <>
+
       <Jukebox />
-    </div>
-  );
-};
-  
+        < PlayPauseButton />
+        
+
+    <Songbook />
+
+    </>
+  )
+}
 
 
 export default App
