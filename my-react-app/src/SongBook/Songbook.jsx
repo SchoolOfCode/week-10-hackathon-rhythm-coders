@@ -19,6 +19,7 @@ const Songbook = ({ songs, onSongSelect }) => {
             <div className={styles.songInfo}>
               <span className={styles.songTitle}>{song.title}</span>
               <span className={styles.songArtist}>{song.artist}</span>
+              <h1>TEST</h1>
             </div>
           </div>
         ))}
