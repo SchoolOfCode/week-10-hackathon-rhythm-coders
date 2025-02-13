@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "../ui/button"; // Updated path
-import { Input } from "../ui/input"; // Updated path
+import { Button, Input } from '@mui/material'; // Updated path
 import { Music } from "lucide-react";
 
 export default function Jukebox({ onPlay, currentlyPlaying }) {
