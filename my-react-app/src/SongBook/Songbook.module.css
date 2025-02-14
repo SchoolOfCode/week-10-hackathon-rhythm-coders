@@ -29,6 +29,7 @@
     color: #fff;
     font-size: 2em;
     margin: 0;
+    /* keyframes is a rule used to define animations in css */
     animation: neonPulse 1.5s infinite alternate;
   }
   
