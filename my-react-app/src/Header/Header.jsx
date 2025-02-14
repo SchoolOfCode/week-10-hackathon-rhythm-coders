@@ -3,7 +3,7 @@ import './Header.css';
 const Header = () => {
   return (
     <header className="header">
-      <h1>🎵 Jukebox 🎵</h1>
+      <h1>🎵 Jukebox YAY🎵</h1>
     </header>
   );
 };
